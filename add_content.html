@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee Hours Worked</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <h1>Employee Hours Tracker</h1>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="./index.html">Home</a>
+        <!-- Add other navigation links if needed -->
+    </div>
+</nav>
+
+<!-- Content -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <h2>Add Employee Hours Worked</h2>
+            <form action="process_form.php" method="POST">
+                <div class="form-group">
+                    <label for="employee_id">Employee ID</label>
+                    <input type="text" class="form-control" id="employee_id" name="employee_id" required>
+                </div>
+                <div class="form-group">
+                    <label for="employee_name">Employee Name</label>
+                    <input type="text" class="form-control" id="employee_name" name="employee_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <input type="text" class="form-control" id="department" name="department" required>
+                </div>
+                <div class="form-group">
+                    <label for="hours_worked">Hours Worked</label>
+                    <input type="number" class="form-control" id="hours_worked" name="hours_worked" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+        <p>&copy; 2024 Employee Hours Tracker</p>
+    </div>
+</footer>
+
+</body>
+</html>

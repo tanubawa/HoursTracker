@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for the Employee Portal */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #b7d5ee;
+        }
+
+        .company-image {
+            width: 300px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .content-section {
+            background-color: rgba(234, 224, 204, 0.67); /* Semi-transparent background */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .hero-image {
+            height: 60vh; /* Set height to 60% of viewport height */
+            width: 100%;
+            object-fit: cover;
+        }
+
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        h3{
+            font-family: "Candara Light";
+            text-align: center;
+        }
+        p{
+            font-family: "Comic Sans MS";
+            text-align: center;
+            font-size: larger;
+        }
+        #nav {
+            background-color: #b7d5ee;
+            padding: 10px 20px;
+            border-bottom: 2px solid #000000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .navbar-brand {
+            font-size: 25px;
+            color: #040709;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin-right: 20px; /* Add margin between the links */
+        }
+        .navbar-brand:first-child {
+            margin-right: 600px;
+        }
+        .navbar-brand:hover {
+            background-color: #ffffff;
+            color: #000;
+            width: max-content;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            background-color: #ecc8db;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #000000; /* Border color for table rows */
+        }
+        th {
+            background-color: #262623; /* Background color for table header */
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f2f4; /* Alternate background color for even rows */
+        }
+        tr:nth-child(odd) {
+            background-color: #b6b4b4; /* Alternate background color for odd rows */
+        }
+        tr:hover {
+            background-color: #eadfe3; /* Hover color for table rows */
+        }
+        ul {
+            padding: 0;
+            font-family: "Arial";
+            text-align: center;
+            list-style-type: none;
+        }
+        li {
+            margin-bottom: 10px;
+            font-family: "Arial";
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <img src="zenith_dynamics_cover.jpeg" alt="Company Image" class="company-image">
+        <h1>Zenith Dynamics</h1>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav id="nav">
+    <div class="container">
+        <a class="navbar-brand" href="./add_content.html">Add</a>
+        <a class="navbar-brand" href="./view_content.php">View</a>
+    </div>
+</nav>
+
+<div class="container-fluid p-0">
+    <img src="ggrr.webp" alt="Hero Image" class="hero-image">
+</div>
+
+<!-- Content -->
+<div class="container">
+    <div class="content-section">
+        <h2>Timetable of Shifts</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Shift Time</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>April 1, 2024</td>
+                <td>9:00 AM - 5:00 PM</td>
+            </tr>
+            <tr>
+                <td>April 2, 2024</td>
+                <td>9:00 AM - 5:00 PM</td>
+            </tr>
+            <tr>
+                <td>April 4, 2024</td>
+                <td>9:00 AM - 5:00 PM</td>
+            </tr>
+            <tr>
+                <td>April 6, 2024</td>
+                <td>9:00 AM - 5:00 PM</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+        <div class="content-section">
+            <h2>News</h2>
+            <h3>Zenith Dynamics Unveils New Quantum Computing Division</h3>
+            <p>Zenith Dynamics announced the establishment of a new division dedicated to quantum computing research and development, aiming to lead the industry in breakthrough technologies.</p>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+        <div class="content-section">
+            <h2>Job Position: Manager</h2>
+            <h3>Job Responsibilities:</h3>
+            <ul>
+                <li>Oversee day-to-day operations</li>
+                <li>Lead and motivate team members</li>
+                <li>Develop strategic plans and objectives</li>
+                <li>Ensure compliance with company policies</li>
+                <li>Manage budgets and resources</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+        <div class="content-section">
+            <h2>Achievements</h2>
+            <p>Employee of the Week and Employee of the Year</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+        <p>&copy; 2024 Zenith Dynamics</p>
+    </div>
+</footer>
+
+</body>
+</html>
